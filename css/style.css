@@ -28,10 +28,19 @@ h1 {
     line-height: 57px;
     margin-bottom: 20px;
 }
+h2 {
+    font-family: var(--font-raleway);
+    font-size: 2.25rem;
+}
 
 .container {
     width: 1352px;
     margin: 0 auto;
+}
+.title {
+    text-align: center;
+    font-family: var(--font-raleway);
+    color: var(--color-black);
 }
 
 .header {
@@ -98,13 +107,8 @@ h1 {
 }
 
 .opening__title {
-    text-align: center;
-    font-family: var(--font-raleway);
-    color: var(--color-black);
     line-height: 22px;
-    /*padding-bottom: 500px;*/
     padding-bottom: 40px;
-
 }
 
 .opening__class {
@@ -135,4 +139,82 @@ h1 {
 .opening-button {
     background-color: var(--color-primary);
     box-shadow: 5px 10px 14px var(--color-primary-shadow);
+}
+.statistics {
+    margin-top: 100px;
+}
+
+.statistics__title {
+    text-align: center;
+    padding-top: 100px;
+    color: var(--color-black);
+}
+
+.statistics__container {
+    max-width: 800px;
+    margin: 100px auto 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.statistics__single {
+    max-width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-family: var(--font-raleway);
+}
+
+.statistics__circle {
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+    position: relative;
+}
+
+.statistics__img {
+    position: absolute;
+}
+
+.statistics__single:nth-child(1) .statistics__circle {
+    background-color: var(--color-redish);
+}
+
+.statistics__single:nth-child(1) .statistics__img {
+    top: 0;
+    left: 45%;
+}
+
+.statistics__single:nth-child(2) .statistics__circle {
+    background-color: var(--color-primary);
+}
+
+.statistics__single:nth-child(2) .statistics__img {
+    top: 14px;
+    left: 47%;
+}
+
+.statistics__single:nth-child(3) .statistics__circle {
+    background-color: var(--color-green);
+}
+
+.statistics__single:nth-child(3) .statistics__img {
+    top: 6px;
+    left: 50%;
+}
+
+.statistics__number {
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: 0.1875rem;
+    margin-top: 13px;
+    color: var(--color-black);
+
+}
+
+.statistics__description {
+    color: var(--color-grey);
+    margin-top: 19px;
 }
