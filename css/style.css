@@ -15,8 +15,124 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: var(--font-open-sans);
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 49px;
+    line-height: 57px;
+    margin-bottom: 20px;
+}
+
 .container {
     width: 1352px;
     margin: 0 auto;
+}
 
+.header {
+    height: 70px;
+    box-shadow: 0 3px 6px #00000029;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    font-size: 32px;
+    color: var(--color-primary);
+}
+
+.header-nav {
+    display: flex;
+}
+
+.header-nav__element {
+    padding: 0 26px;
+}
+
+.nav__element:last-child {
+    padding-right: 0;
+}
+
+.header-list-link {
+    color: var(--color-grey);
+    font-weight: 700;
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    padding: 28px 18px 22px;
+    border-bottom: 4px solid transparent;
+    letter-spacing: 0.1875rem;
+}
+
+.header-list-link:hover {
+    color: var(--color-black);
+    border-color: var(--color-primary);
+}
+
+.opening {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 100px;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.opening__content {
+    margin-top: 130px;
+    text-align: center;
+    position: center;
+}
+
+.opening__title {
+    text-align: center;
+    font-family: var(--font-raleway);
+    color: var(--color-black);
+    line-height: 22px;
+    /*padding-bottom: 500px;*/
+    padding-bottom: 40px;
+
+}
+
+.opening__class {
+    margin-top: 40px;
+    margin-bottom: 38px;
+    color: var(--color-black);
+    text-align: center;
+    font-size: 16px;
+}
+
+.opening__image {
+    width: 100%;
+    height: auto;
+}
+
+.btn {
+    border-radius: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: var(--color-white);
+    padding: 22px 157px;
+    margin: 40px;
+}
+
+.opening-button {
+    background-color: var(--color-primary);
+    box-shadow: 5px 10px 14px var(--color-primary-shadow);
 }
