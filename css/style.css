@@ -28,6 +28,7 @@ h1 {
     line-height: 57px;
     margin-bottom: 20px;
 }
+
 h2 {
     font-family: var(--font-raleway);
     font-size: 2.25rem;
@@ -37,6 +38,7 @@ h2 {
     width: 1352px;
     margin: 0 auto;
 }
+
 .title {
     text-align: center;
     font-family: var(--font-raleway);
@@ -140,6 +142,7 @@ h2 {
     background-color: var(--color-primary);
     box-shadow: 5px 10px 14px var(--color-primary-shadow);
 }
+
 .statistics {
     margin-top: 100px;
 }
@@ -217,4 +220,182 @@ h2 {
 .statistics__description {
     color: var(--color-grey);
     margin-top: 19px;
+}
+
+.benefits {
+    margin-top: 100px;
+    background-color: var(--color-light-grey);
+    padding: 2px;
+}
+
+.benefits__container {
+    margin: 100px auto 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 0 100px;
+}
+
+.benefits-box-one {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: var(--color-white);
+    border: 1px solid #E8E9ED;
+    align-items: flex-end;
+    margin-bottom: 37px;
+    border-radius: 5px;
+    height: 370px
+}
+
+.benefits-text {
+    max-width: 416px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 90px 36px;
+}
+
+.benefits-text::after {
+    content: "";
+    width: 332px;
+    height: 4px;
+    background-color: var(--accent-color);
+    display: block;
+    margin-top: 50px;
+}
+
+.benefits__title {
+    top: 1640px;
+    left: 287px;
+    width: 246px;
+    text-align: left;
+    font-size: 36px;
+    font-family: var(--font-raleway);
+    color: var(--color-black);
+    padding-bottom: 20px;
+}
+
+.benefits__description {
+    top: 1712px;
+    left: 286px;
+    width: 416px;
+    height: 66px;
+    text-align: left;
+    font-size: 16px;
+    color: var(--color-black);
+}
+
+.benefits__image {
+    position: relative;
+}
+
+.benefits__image img {
+    position: relative;
+    z-index: 2;
+}
+
+.benefits-box-laptop {
+    --accent-color: var(--color-redish);
+}
+
+.benefits-box-laptop .benefits__image {
+    margin-right: 117px;
+    margin-bottom: 38px;
+}
+
+.benefits-box-laptop .benefits__image::before {
+    content: "";
+    width: 180px;
+    height: 180px;
+    background-color: var(--accent-color);
+    display: block;
+    border-radius: 40px;
+    position: absolute;
+    right: 0;
+    top: -40px;
+    transform: rotate(45deg);
+}
+
+.benefits-box-laptop .benefits__image img {
+    width: 386px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.benefits-box-phone {
+    --accent-color: var(--color-primary);
+    padding: 0 20px 0 70px;
+}
+
+.benefits-box-phone .benefits__image::before {
+    content: "";
+    width: 320px;
+    height: 320px;
+    background-color: var(--accent-color);
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: -20px;
+}
+
+.benefits-box-phone .benefits__image img {
+    width: 426px;
+    height: auto;
+}
+
+.benefits-box-phone .benefits__text {
+    margin: 70px 0;
+}
+
+.benefits-box-two {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: flex-end;
+    margin-bottom: 37px;
+    border-radius: 5px;
+    height: 370px;
+}
+
+.benefits-box-trumpet {
+    height: 370px;
+    background: var(--color-white);
+    --accent-color: var(--color-green);
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+.benefits-box-trumpet .benefits__text {
+    max-width: none;
+    margin: 70px 35px;
+}
+
+.benefits__trumpet_image {
+    top: 2364px;
+    left: 935px;
+    width: 440px;
+    height: 370px;
+    background: var(--color-green);
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    margin-left: 50px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefits-box-trumpet .benefits__trumpet_image img {
+    width: 296px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    margin: 70px 90px;
+    vertical-align: middle;
 }
