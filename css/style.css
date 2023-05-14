@@ -399,3 +399,233 @@ h2 {
     margin: 70px 90px;
     vertical-align: middle;
 }
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+}
+
+.pricing__boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.pricing__box {
+    width: 370px;
+    border: 1px solid var(--accent-color);
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing__details {
+    margin-top: 34px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.pricing__type {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--font-raleway);
+}
+
+.pricing__price {
+    font-size: 46px;
+    font-weight: 300;
+    color: var(--accent-color);
+    margin-top: 25px;
+}
+
+.pricing__limited {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    font-family: var(--font-raleway);
+}
+
+.pricing__items {
+    text-align: center;
+}
+
+.pricing__item {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.pricing__item::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../assets/Ckechmark-1.svg");
+}
+
+.pricing__item--not::before {
+    background-image: url("../assets/Close.svg");
+}
+
+.btn-pricing {
+    position: relative;
+    bottom: -25px;
+    font-size: 0.8125rem;
+    background-color: var(--accent-color);
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    padding: 16px 65px;
+    border-radius: 23px;
+    border: none;
+    box-shadow: 3px 10px 14px var(--color-primary-shadow);
+}
+
+.pricing__box--basic {
+    --accent-color: var(--color-redish);
+}
+
+.pricing__box--basic .pricing__price {
+    margin-bottom: 30px;
+}
+
+.pricing__box--professional {
+    --accent-color: var(--color-primary);
+    width: 400px;
+    margin: 0 40px;
+    box-shadow: 5px 1px 27px var(--color-primary-shadow);
+}
+
+.pricing__box--professional .pricing__type {
+    font-size: 1.3125rem;
+}
+
+.pricing__box--professional .pricing__item {
+    margin-bottom: 25px;
+}
+
+.pricing__box--premium {
+    --accent-color: var(--color-green);
+}
+
+.contact {
+    padding: 80px 100px 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact__column {
+    width: 50%;
+}
+
+.contact__title {
+    font-size: 49px;
+    font-family: var(--font-raleway);
+    line-height: 57px;
+}
+
+.contact__instruction {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 22px 0 42px;
+}
+
+.contact__details {
+    display: flex;
+    justify-content: flex-start;
+    color: var(--color-grey);
+    align-items: center;
+}
+
+.details__item {
+    color: var(--color-grey);
+    font-weight: 600;
+    text-decoration: none;
+}
+.details__item:first-of-type {
+    margin-right: 20px;
+}
+.details__item img {
+    margin-right: 10px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.form__field {
+    display: flex;
+    flex-direction: column;
+}
+.form__field:first-of-type {
+    margin-bottom: 42px;
+}
+.form__label{
+    letter-spacing: 3.28px;
+    font-weight: bold;
+    color: var(--color-primary);
+    line-height: 15px;
+    font-size: 11px;
+}
+.form__input {
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    background-color: transparent;
+    line-height: 2.625rem;
+}
+.form__consent {
+    margin-top: 30px;
+}
+.form__checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.form__checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.form__checkbox .checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-grey);
+    border-radius: 4px;
+}
+.form__checkbox input:checked ~ .checkbox {
+    background-image: url("../assets/Checkmark.svg");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+.form__checkbox .consent__text {
+    margin: 0 10px;
+    font-size: 12px;
+    color: var(--color-grey);
+    line-height: 17px;
+}
+.button-send {
+    font-size: 0.8125rem;
+    padding: 20px 97px;
+    align-self: flex-end;
+    margin-top: 20px;
+    box-shadow: 5px 10px 14px #07ACE629;
+    border-radius: 35px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+}
